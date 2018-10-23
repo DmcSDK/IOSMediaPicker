@@ -326,12 +326,12 @@
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
     [cell sizeToFit];
     PHAsset *asset=fetchResult[indexPath.item];
-    [_manager requestImageForAsset:asset
-                        targetSize:CGSizeMake(200 , 200)
-                       contentMode:PHImageContentModeAspectFill
-                           options:nil
+    [_manager requestImageForAsset:asset targetSize:CGSizeMake(200 , 200)  contentMode:PHImageContentModeAspectFill options:nil
                      resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                         cell.imgView.image = result;
+                        BOOL downloadFinined = (![[info objectForKey:PHImageCancelledKey] boolValue] && ![info objectForKey:PHImageErrorKey] && ![[info objectForKey:PHImageResultIsDegradedKey] boolValue]);
+                        if (downloadFinined && result) { 
+                            cell.imgView.image = result;
+                        }
                      }];
     NSInteger i=[self isSelect:asset];
     if(asset.mediaType==PHAssetMediaTypeVideo){
