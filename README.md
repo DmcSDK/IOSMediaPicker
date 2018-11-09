@@ -8,8 +8,8 @@
 
 How do I use?
 -------------------
-[Cordova版](https://github.com/dmcBig/cordova-plugin-mediaPicker) : https://github.com/dmcBig/cordova-plugin-mediaPicker 
+[Cordova版](https://github.com/DmcSDK/cordova-plugin-mediaPicker) : https://github.com/DmcSDK/cordova-plugin-mediaPicker 
 
-[Android版](https://github.com/dmcBig/MediaPickerPoject) : https://github.com/dmcBig/MediaPickerPoject
+[Android版](https://github.com/DmcSDK/MediaPickerPoject) : https://github.com/DmcSDK/MediaPickerPoject
 ## IOS
-<img src="https://github.com/dmcBig/cordova-plugin-mediaPicker/blob/master/www/demo/ios.gif" width="300" alt="ios" />
+<img src="https://github.com/DmcSDK/cordova-plugin-mediaPicker/blob/master/www/demo/ios.gif" width="300" alt="ios" />
